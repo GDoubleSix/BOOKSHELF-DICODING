@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+  <div class="header-text">
+    <h1>BookShelf</h1>
+    <h2>Selamat datang di Bookshelf</h2>
+    <p>Buat pengalaman membacamu lebih teratur, catat buku-buku yang belum selesai dibaca,<br> dan tandai yang sudah selesai.</p>
+    <br>
+    <div class="form-group" id="form">
+      <form>
+        <div class="form-input form-title">
+          <label for="title"></label>
+          <input type="text" id="title" name="title" required placeholder="Masukkan judul">
+        </div>
+        <div class="form-input form-author">
+          <label for="author"></label>
+          <input type="text" id="author" name="author" required placeholder="Masukkan penulis">
+        </div>
+        <div class="form-input form-date">
+          <label for="date"></label>
+          <input type="date" id="date" name="date" required>
+        </div>
+      </form>
+      <form>
+        <input type="submit" value="Tambah Buku" name="Submit" class="btn-submit">
+      </form>
+      
+    </div>
+    <form id="search-form">
+        <div class="form-input form-search">
+          <label for="search"></label>
+          <input type="text" id="search" name="search" placeholder="Cari buku...">
+        </div>
+        <input type="submit" value="Cari" name="Submit" class="btn-submit">
+      </form>
+  </div>
+  
+  <img src="img/download.png" alt="rak-buku" id="bookshelf-img">
+</header>
+
+<main>
+  <aside>
+    <div class="bio-container">
+      <img src="img/foto-bio.jpeg" alt="Your Photo" id="bio-photo">
+      <h3>Creatted by :</h3>
+      <p>Muqi Gewa Tritanoto, Student at Stmik Triguna Dharma Medan.</p>
+      <p>Was born on June-06-2001<p>Kabupaten.Deli Serdang</p></p>
+      <div class="social-media">
+        <a href="https://www.instagram.com/muqigw/" target="_blank" rel="noopener noreferrer">
+          <img src="img/ig.png" alt="instagram"> 
+        </a>
+        <a href="https://www.facebook.com/muqigewa12" target="_blank" rel="noopener noreferrer">
+          <img src="img/fb.png" alt="facebook"></a>
+      </div>
+    </div>
+  </aside>
+  <div class="wrapper">
+    <div class="container">
+      <center>
+        <h3 class="container-header">SELESAI DIBACA</h3>
+      </center>
+      <div class="list-item" id="books">
+      </div>
+    </div>
+    <div class="container">
+      <center>
+        <h3 class="container-header">SEDANG DIBACA</>
+      </center>
+      <div class="list-item" id="completed-books">
+      </div>
+    </div>
+  </div>
+</main>
+<script src="main.js"></script>
+
+</body>
+</html>
